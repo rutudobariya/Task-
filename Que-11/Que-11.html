@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-11</title>
+    <link rel="stylesheet" href="../Que-11/CSS/style.css">
+</head>
+<body>
+    <header class="box">
+        <header class="prev">
+            <button><a href="../Que-10/Que-10.html">Prev</a></button>
+        </header>
+        <header class="next">
+            <button><a href="../Que-12/Que-12.html">Next</a></button>
+        </header>
+    </header>
+
+    <hr>
+    <hr>
+    <h1>Que:11</h1>
+    <hr>
+    <hr> <br>
+
+    <h2><u>Write a program to display the current day & time  in the following format  ? </u></h2><br><br>
+
+    <b><u>Ans:</u></b>
+    <h4 style="color:crimson; font-size: 20px;"><u>example:-</u></h4>
+
+    <script>
+        function getCurrentDateAndTime() {
+          const now = new Date();
+      
+          const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          const day = daysOfWeek[now.getDay()];
+          
+          // Format the date as MM/DD/YYYY
+          const formattedDate = `${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`;
+          
+          // Format the time as HH:MM:SS
+          const formattedTime = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+      
+          // Display the current date and time in an element with id "output"
+          document.getElementById("output").textContent = `Current date:\n ${day}, ${formattedDate}\n Current time:\n${formattedTime}`;
+        }
+      
+        // Call the function when the page loads
+        window.onload = function() {
+          getCurrentDateAndTime();
+      
+          // Update the time every second
+          setInterval(getCurrentDateAndTime, 1000);
+        };
+      </script>
+      
+      <!-- Display the current date and time here -->
+      <div id="output"></div>
+      
+    
+    </body>
+</html>

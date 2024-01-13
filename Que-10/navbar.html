@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+    
+</body>
+</html>
+<section  id="header">
+    <div class="header_container">
+
+            <div class="header_image">
+                <div class="logo">
+                    <I>roteredd</I>
+                </div>
+
+            </div>
+            <div class="menu">
+                <ul class="nav-bar">
+                    <li><a href="#" onclick="rem()">HOME</a></li>
+                    <li><a href="#" onclick="rem()">BEDROOM</a></li>
+                    <li><a href="#" onclick="rem()">DINING</a></li>
+                    <li><a href="#" onclick="rem()">KICHEN</a></li>
+                    <li><a href="#" onclick="rem()">BACKYARD</a></li>
+                    
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div class="text-overlay">
+            <h1>DESIGN YOUR HOME</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, totam. Sunt magnam praesentium provident neque soluta ipsa quaerat nihil maxime.</p>
+            <button>Watch More</button> 
+        <button>Subscribe</button> 
+        </div>
+        
+    </section>
+        
+<script>
+    const menu = document.querySelector('.nav-bar');
+const hamburger = document.querySelector('.hamburger');
+
+
+hamburger.addEventListener('click', ()=>{
+     menu.classList.toggle('active');
+})
+
+function rem(){
+    menu.classList.remove('active');
+}
+</script>
+    
+</body>
+</html>

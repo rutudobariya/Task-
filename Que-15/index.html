@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-15</title>
+<link rel="stylesheet" href="../Que-15/CSS/style.css">
+</head>
+<>
+    <header class="box">
+        <header class="prev">
+            <button><a href="../Que-14/Que-14.html">Prev</a></button>
+        </header>
+        <header class="next">
+            <button><a href="../Que-16/index.html">Next</a></button>
+        </header>
+    </header>
+
+    <hr>
+    <hr>
+    <h1>Que:15</h1>
+    <hr>
+    <hr> <br>
+    <h2><u> Write a javascript function to get the function name  ? </u></h2><br><br>
+    <b><u>Ans:</u></b>
+    <p style="font-size:18px;">->In JavaScript, it's not straightforward to retrieve the name of the current function from within the function itself. However, you can achieve this by using the name property of the function. Here's a simple example:</p>
+    <h4 style="color:crimson; font-size: 20px; margin-top: 20px; margin-left: 20px;"><u>example:-</u></h4>
+
+    <script>
+    function getFunctionName() {
+        // Use the 'name' property of the function
+        return getFunctionName.name;
+      }
+      
+      // Example usage:
+      let functionName = getFunctionName();
+      document.write(`Function Name: ${functionName}`);
+    </script>
+      
+</body>
+</html>

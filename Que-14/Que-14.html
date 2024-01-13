@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-14</title>
+    <link rel="stylesheet" href="../Que-14/css/style.css">
+</head>
+<body>
+    <header class="box">
+        <header class="prev">
+            <button><a href="../Que-13/math operation .html">Prev</a></button>
+        </header>
+        <header class="next">
+            <button><a href="../Que-15/index.html">Next</a></button>
+        </header>
+    </header>
+
+    <hr>
+    <hr>
+    <h1>Que:14</h1>
+    <hr>
+    <hr> <br>
+
+    <h2><u>Write a javascript function reverse number ? </u></h2><br><br>
+
+     <b><u>Ans:</u></b> <br> <br>
+     <script>
+        function reverseNumber(number) {
+          let numberString = number.toString();
+          let reversedString = numberString.split('').reverse().join('');
+          let reversedNumber = parseInt(reversedString, 10);
+          return reversedNumber;
+        }
+        
+        let originalNumber = 160495;
+        let reversed = reverseNumber(originalNumber);
+        
+        document.write(`<p>Original Number: ${originalNumber}</p>`);
+        document.write(`<p>Reversed Number: ${reversed}</p>`);
+        </script>
+        
+      
+</body>
+</html>
